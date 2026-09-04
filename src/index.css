@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #0a0908;
+  --color-ink-soft: #121110;
+  --color-panel: #16130d;
+  --color-gold: #c58e16;
+  --color-gold-bright: #d4ad61;
+  --color-gold-dim: #7a6234;
+  --color-bone: #ede8dd;
+  --color-bone-dim: #a29c8e;
+  --color-hair: #2a2621;
+
+  --font-display: 'Bodoni Moda', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-bone);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* Hide scrollbar until scrolling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+*:hover {
+  scrollbar-color: var(--color-gold-dim) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 8px;
+}
+
+body:hover ::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dim);
+}
