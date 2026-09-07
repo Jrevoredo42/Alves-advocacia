@@ -20,7 +20,7 @@ export default function AtuacaoPage() {
         kicker="Atuação"
         title="As áreas."
         lead="Atuação concentrada em frentes onde a profundidade técnica faz diferença real no resultado."
-        image="/advogados/equipe.png"
+        image="/advogados/equipe-atuacao.png"
         imageAlt="Fachada clássica com colunas, símbolo da tradição jurídica"
         aspectRatio="aspect-[4096/2926]"
       />

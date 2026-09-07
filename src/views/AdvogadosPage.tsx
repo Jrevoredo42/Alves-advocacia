@@ -28,7 +28,7 @@ export default function AdvogadosPage() {
         kicker="Os Advogados"
         title="A banca."
         lead="Uma equipe enxuta e sênior, onde cada nome responde pessoalmente pelos casos que assume."
-        image="/advogados/equipe.png"
+        image="/advogados/equipe-advogados.png"
         imageAlt="Mesa de reunião do escritório Alves Advocacia"
         aspectRatio="aspect-[4096/2926]"
       />

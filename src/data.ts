@@ -3,7 +3,7 @@ export type Lawyer = {
   role: string;
   oab?: string;
   focus?: string;
-  bio: string;
+  bio?: string;
   img: string;
 };
 
