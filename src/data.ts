@@ -13,7 +13,7 @@ export const LAWYERS: Lawyer[] = [
     role: "Sócio-fundador",
     // oab: "OAB/SP 128.440",
     focus: "OAB 56075",
-    bio: "Fundou a banca em 1998 após uma década em contencioso empresarial. Conduz operações societárias e reestruturações de alta complexidade.",
+    bio: "Me chamo Bruno Filipe, saí do Mato Grosso e vim parar no agreste de Pernambuco aos 4 anos de idade. Aprendi logo cedo que se adaptar é preciso, trouxe pra advocacia essa resiliência. Na vida, até posso ficar as vezes ansioso pra chegar logo o final de uma partida de xadrez, mas aqui, no direito, a paciência é uma arma secreta e uma virtude inegociável pra atuação profissional.",
     img: "/advogados/bruno-alves.png",
   },
   {
