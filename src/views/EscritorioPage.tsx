@@ -7,9 +7,9 @@ import { useRef } from "react";
 import Link from "next/link";
 
 const STATS = [
-  { value: "26", label: "Anos de banca" },
-  { value: "2", label: "Andares" },
-  { value: "1.4k+", label: "Casos conduzidos" },
+  { value: "5", label: "Anos de banca" },
+  { value: "Escritório", label: "Centralizado" },
+  { value: "Diversos", label: "Casos conduzidos" },
   { value: "100%", label: "Sigilo garantido" },
 ];
 
@@ -39,14 +39,15 @@ export default function EscritorioPage() {
         index="01"
         kicker="O Escritório"
         title="A sede."
-        lead="No coração do centro financeiro de São Paulo, uma estrutura pensada para a confidencialidade que a advocacia exige."
-        image="https://images.unsplash.com/photo-1775144657610-9a6f171e522f?w=1600&h=900&fit=crop&auto=format"
-        imageAlt="Sala principal do escritório Alves Advocacia com mobiliário clássico"
+        lead="No coração do centro de Garanhuns, uma estrutura pensada para a confidencialidade que a advocacia exige."
+        image="/escritorio/frente-escritorio.png"
+        imageAlt="Os dois sócios-fundadores na fachada do escritório, no centro de Garanhuns."
+        aspectRatio="aspect-[3/2]"
       />
 
       {/* Stats */}
       <section className="border-b border-hair bg-ink-soft py-16">
-        <div className="mx-auto grid max-w-[1240px] grid-cols-2 gap-8 px-6 md:grid-cols-4 md:px-10">
+        <div className="mx-auto grid max-w-310 grid-cols-2 gap-8 px-6 md:grid-cols-4 md:px-10">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.06}>
               <dt className="font-display text-4xl font-semibold text-gold md:text-5xl">{s.value}</dt>
@@ -58,7 +59,7 @@ export default function EscritorioPage() {
 
       {/* Narrative + image */}
       <section className="bg-ink py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <div className="grid gap-16 md:grid-cols-[1.1fr_0.9fr] md:gap-20">
             <div className="flex flex-col justify-center">
               <Reveal>
@@ -66,13 +67,12 @@ export default function EscritorioPage() {
               </Reveal>
               <Reveal delay={0.05}>
                 <h2 className="mt-7 font-display text-4xl font-medium leading-[1.05] tracking-tight text-bone md:text-5xl">
-                  Faria Lima, 3477 —<span className="italic text-gold"> Itaim Bibi.</span>
+                  R. Dantas Barreto, 232 —<span className="italic text-gold"> Santo Antônio.</span>
                 </h2>
               </Reveal>
               <Reveal delay={0.1}>
                 <p className="mt-8 max-w-xl font-body leading-relaxed text-bone-dim">
-                  O escritório ocupa dois andares em uma das avenidas mais
-                  emblemáticas de São Paulo. O ambiente combina o peso da
+                  O escritório ocupa o coração do centro da cidade. O ambiente combina o peso da
                   tradição jurídica com uma infraestrutura discreta e moderna,
                   onde cada detalhe — da recepção às salas de trabalho — foi
                   desenhado para transmitir seriedade e proteger a informação do
@@ -88,14 +88,14 @@ export default function EscritorioPage() {
             </div>
 
             <Reveal delay={0.1}>
-              <div ref={ref} className="relative h-[420px] overflow-hidden md:h-[560px]">
+              <div ref={ref} className="relative w-full overflow-hidden aspect-4/5 bg-ink-soft/30">
                 <motion.img
                   style={{ y }}
-                  src="https://images.unsplash.com/photo-1775144657626-29ff0a46ca90?w=1200&h=1500&fit=crop&auto=format"
-                  alt="Estantes de livros jurídicos na sede da Alves Advocacia"
-                  className="absolute inset-[-8%_0] h-[116%] w-full object-cover grayscale-[0.25]"
+                  src="/escritorio/escritorio.png"
+                  alt="Recepção do escritório Alves Advocacia"
+                  className="h-full w-full object-contain grayscale-[0.25]"
                 />
-                <div className="absolute inset-0 ring-1 ring-inset ring-gold/20" />
+                <div className="absolute inset-0 ring-1 ring-inset ring-gold/20 pointer-events-none" />
               </div>
             </Reveal>
           </div>
@@ -104,7 +104,7 @@ export default function EscritorioPage() {
 
       {/* Spaces */}
       <section className="border-t border-hair bg-ink-soft py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <Reveal>
             <Kicker>A estrutura</Kicker>
           </Reveal>

@@ -28,12 +28,13 @@ export default function AdvogadosPage() {
         kicker="Os Advogados"
         title="A banca."
         lead="Uma equipe enxuta e sênior, onde cada nome responde pessoalmente pelos casos que assume."
-        image="https://images.unsplash.com/photo-1571055931484-22dce9d6c510?w=1600&h=900&fit=crop&auto=format"
+        image="/advogados/equipe.png"
         imageAlt="Mesa de reunião do escritório Alves Advocacia"
+        aspectRatio="aspect-[4096/2926]"
       />
 
       <section className="bg-ink py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <Reveal>
             <Kicker>Sócios & Associados</Kicker>
           </Reveal>
@@ -44,7 +45,7 @@ export default function AdvogadosPage() {
       </section>
 
       <section className="border-t border-hair bg-ink-soft py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <div className="grid gap-16 md:grid-cols-[0.9fr_1.1fr] md:gap-20">
             <div>
               <Reveal>

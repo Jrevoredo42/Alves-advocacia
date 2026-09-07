@@ -20,18 +20,18 @@ export default function AtuacaoPage() {
         kicker="Atuação"
         title="As áreas."
         lead="Atuação concentrada em frentes onde a profundidade técnica faz diferença real no resultado."
-        image="https://images.unsplash.com/photo-1773544015678-58d09366ad6e?w=1600&h=900&fit=crop&auto=format"
+        image="/advogados/equipe.png"
         imageAlt="Fachada clássica com colunas, símbolo da tradição jurídica"
+        aspectRatio="aspect-[4096/2926]"
       />
 
       {/* Proposta */}
       <section className="border-b border-hair bg-ink py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <Reveal>
-            <p className="max-w-4xl font-display text-3xl font-light leading-[1.25] text-bone md:text-5xl">
-              Não vendemos horas —<span className="text-gold"> entregamos clareza.</span> Nossa
-              atuação combina rigor técnico e tecnologia de gestão para que o
-              cliente sempre saiba onde está e por quê.
+            <p className="max-w-4xl font-display text-3xl font-light leading-tight text-bone md:text-5xl">
+              Nossa atuação se baseia em oferecer uma advocacia humana, acessível, estratégica e comprometida com quem deposita em nós a sua
+              <span className="text-gold"> confiança.</span>
             </p>
           </Reveal>
         </div>
@@ -39,7 +39,7 @@ export default function AtuacaoPage() {
 
       {/* Áreas */}
       <section className="bg-ink py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <div className="grid gap-16 md:grid-cols-[0.7fr_1.3fr] md:gap-20">
             <div className="md:sticky md:top-32 md:self-start">
               <Reveal>
@@ -58,7 +58,7 @@ export default function AtuacaoPage() {
 
       {/* Método */}
       <section className="border-t border-hair bg-ink-soft py-24 md:py-32">
-        <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+        <div className="mx-auto max-w-310 px-6 md:px-10">
           <Reveal>
             <Kicker>O método</Kicker>
           </Reveal>
