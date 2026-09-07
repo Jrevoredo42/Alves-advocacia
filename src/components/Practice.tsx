@@ -7,22 +7,20 @@ import Link from "next/link";
 export function Practice() {
   return (
     <section id="atuacao" className="relative border-t border-hair bg-ink py-28 md:py-36">
-      <div className="mx-auto max-w-[1240px] px-6 md:px-10">
-        <div className="grid gap-16 md:grid-cols-[0.85fr_1.15fr] md:gap-20">
-          <div className="md:sticky md:top-32 md:self-start">
+      <div className="mx-auto max-w-310 px-6 md:px-10">
+        <div className="grid gap-14 md:grid-cols-[1.25fr_0.75fr] md:gap-16 lg:gap-20">
+          <div className="md:sticky md:top-36 md:self-start pt-4 md:pt-12 lg:pt-16">
             <Reveal>
               <Kicker index="03">A Proposta</Kicker>
             </Reveal>
             <Reveal delay={0.05}>
-              <h2 className="mt-7 font-display text-4xl font-medium leading-[1.05] tracking-tight text-bone md:text-6xl">
-                Direito como<span className="italic text-gold"> instrumento de decisão.</span>
+              <h2 className="mt-7 font-display text-4xl font-medium leading-[1.1] tracking-tight text-bone md:text-[44px] lg:text-[50px]">
+                Uma assessoria jurídica responsável e comprometida com a<span className="italic text-gold"> segurança dos seus direitos,  faz total diferença.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="mt-8 max-w-md font-body leading-relaxed text-bone-dim">
-                Não vendemos horas — entregamos clareza. Nossa atuação combina
-                profundidade técnica e tecnologia de gestão para que o cliente
-                sempre saiba onde está, para onde vai e por quê.
+              <p className="mt-8 max-w-xl font-body leading-relaxed text-bone-dim">
+                A advocacia não transforma apenas processos. Ela contribui para transformar realidades, proteger direitos e construir soluções.
               </p>
             </Reveal>
             <Reveal delay={0.15}>

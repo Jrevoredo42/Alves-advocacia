@@ -11,9 +11,22 @@ type PageHeroProps = {
   lead: string;
   image: string;
   imageAlt: string;
+  aspectRatio?: string;
+  containerClassName?: string;
+  imageClassName?: string;
 };
 
-export function PageHero({ index, kicker, title, lead, image, imageAlt }: PageHeroProps) {
+export function PageHero({
+  index,
+  kicker,
+  title,
+  lead,
+  image,
+  imageAlt,
+  aspectRatio,
+  containerClassName = "",
+  imageClassName = "",
+}: PageHeroProps) {
   const root = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -29,7 +42,7 @@ export function PageHero({ index, kicker, title, lead, image, imageAlt }: PageHe
 
   return (
     <section ref={root} className="relative overflow-hidden border-b border-hair pt-36 pb-20 md:pt-44 md:pb-28">
-      <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+      <div className="mx-auto max-w-310 px-6 md:px-10">
         <nav className="ph-fade mb-10 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.24em] text-bone-dim">
           <Link href="/" className="transition-colors hover:text-gold">Início</Link>
           <span className="text-hair">/</span>
@@ -52,11 +65,11 @@ export function PageHero({ index, kicker, title, lead, image, imageAlt }: PageHe
           <p className="ph-fade max-w-md font-body leading-relaxed text-bone-dim">{lead}</p>
         </div>
 
-        <div className="ph-img mt-16 h-[340px] overflow-hidden md:h-[520px]">
+        <div className={`ph-img mt-16 w-full overflow-hidden ${aspectRatio || "h-85 md:h-130"} ${containerClassName}`}>
           <img
             src={image}
             alt={imageAlt}
-            className="h-full w-full object-cover grayscale-[0.3] contrast-110"
+            className={`h-full w-full object-cover grayscale-[0.3] contrast-110 ${imageClassName}`}
           />
         </div>
       </div>

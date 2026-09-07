@@ -9,7 +9,7 @@ export function LawyerGrid({ showBio = false }: { showBio?: boolean }) {
   const [active, setActive] = useState<number | null>(null);
 
   return (
-    <div className="grid gap-5 md:grid-cols-3">
+    <div className="grid gap-5 md:grid-cols-2">
       {LAWYERS.map((l, i) => (
         <Reveal key={l.name} delay={i * 0.08}>
           <motion.article
@@ -17,13 +17,13 @@ export function LawyerGrid({ showBio = false }: { showBio?: boolean }) {
             onHoverEnd={() => setActive(null)}
             className="group relative flex h-full flex-col overflow-hidden border border-hair bg-ink transition-colors duration-500 hover:border-gold/40"
           >
-            <div className="relative aspect-[4/5] overflow-hidden bg-panel">
+            <div className="relative aspect-4/5 overflow-hidden bg-panel">
               <img
                 src={l.img}
                 alt={`Retrato de ${l.name}, ${l.role}`}
-                className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-[1.04] group-hover:grayscale-0"
+                className="h-full w-full object-cover transition-all duration-700 group-hover:scale-[1.04]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/10 to-transparent" />
               <motion.span
                 className="absolute left-4 top-4 font-mono text-[10px] uppercase tracking-[0.24em] text-gold"
                 animate={{ opacity: active === i ? 1 : 0.6 }}

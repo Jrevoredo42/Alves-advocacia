@@ -16,14 +16,13 @@ export function AreasAccordion() {
           <Reveal key={a.n} delay={i * 0.05}>
             <button
               onClick={() => setOpen(isOpen ? -1 : i)}
-              className="group w-full border-b border-hair py-7 text-left transition-colors hover:border-gold/40"
+              className="group w-full border-b border-hair py-7 text-left transition-colors hover:border-gold/40 hover:cursor-pointer"
             >
               <div className="flex items-baseline gap-5">
                 <span className="font-mono text-[11px] tracking-[0.2em] text-gold">{a.n}</span>
                 <h3
-                  className={`flex-1 font-display text-2xl font-medium tracking-tight transition-colors md:text-4xl ${
-                    isOpen ? "text-gold" : "text-bone"
-                  }`}
+                  className={`flex-1 font-display text-2xl font-medium tracking-tight transition-colors md:text-4xl ${isOpen ? "text-gold" : "text-bone"
+                    }`}
                 >
                   {a.title}
                 </h3>

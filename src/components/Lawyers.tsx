@@ -7,7 +7,7 @@ import Link from "next/link";
 export function Lawyers() {
   return (
     <section id="advogados" className="relative border-t border-hair bg-ink-soft py-28 md:py-36">
-      <div className="mx-auto max-w-[1240px] px-6 md:px-10">
+      <div className="mx-auto max-w-310 px-6 md:px-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <Reveal>
