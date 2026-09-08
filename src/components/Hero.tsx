@@ -40,8 +40,8 @@ export function Hero() {
 
   return (
     <section ref={root} id="top" className="relative min-h-svh overflow-hidden">
-      {/* Image column (right) */}
-      <div className="absolute inset-0 grid md:grid-cols-[1.05fr_0.95fr]">
+      {/* Image column (right on desktop) */}
+      <div className="hidden md:grid absolute inset-0 md:grid-cols-[1.05fr_0.95fr]">
         <div className="hidden md:block" />
         <div className="relative overflow-hidden bg-ink-soft">
           <motion.div ref={imgRef} style={{ y: imgY }} className="absolute inset-[-12%_0_-12%_0]">
@@ -81,7 +81,16 @@ export function Hero() {
           Por trás de cada resultado existe preparo — e na advocacia, cada detalhe importa. Estratégia, dedicação e compromisso que começam muito antes de qualquer conquista.
         </p>
 
-        <div className="hero-meta mt-12 flex flex-wrap items-center gap-4">
+        {/* Mobile Image: adapted for mobile view showing full photo without cutting off lawyers */}
+        <div className="hero-meta mt-8 w-full overflow-hidden rounded-xs border border-hair bg-ink-soft aspect-[4898/3265] md:hidden">
+          <img
+            src="/home/hero.jpg"
+            alt="Advogados Alves Advocacia"
+            className="h-full w-full object-cover grayscale-[0.35] contrast-110"
+          />
+        </div>
+
+        <div className="hero-meta mt-8 md:mt-12 flex flex-wrap items-center gap-4">
           <Link
             href="/#atuacao"
             className="group inline-flex items-center gap-3 rounded-full bg-gold px-7 py-3.5 font-mono text-[12px] uppercase tracking-[0.18em] text-ink transition-all duration-300 hover:bg-gold-bright"
