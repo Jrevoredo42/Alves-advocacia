@@ -4,9 +4,9 @@ import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Alves Advocacia | Direito Empresarial & Contencioso",
+  title: "Alves Advocacia",
   description:
-    "Advocacia empresarial e contenciosa conduzida com rigor técnico e discrição desde 1998. São Paulo - SP.",
+    "Escritório de Advocacia conduzida com rigor técnico e discrição desde 2024. Garanhuns PE.",
 };
 
 export default function RootLayout({
