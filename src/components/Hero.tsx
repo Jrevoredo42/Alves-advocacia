@@ -82,7 +82,7 @@ export function Hero() {
         </p>
 
         {/* Mobile Image: adapted for mobile view showing full photo without cutting off lawyers */}
-        <div className="hero-meta mt-8 w-full overflow-hidden rounded-xs border border-hair bg-ink-soft aspect-[4898/3265] md:hidden">
+        <div className="hero-meta mt-8 w-full overflow-hidden rounded-xs border border-hair bg-ink-soft aspect-4898/3265 md:hidden">
           <img
             src="/home/hero.jpg"
             alt="Advogados Alves Advocacia"
