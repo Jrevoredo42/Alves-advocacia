@@ -41,6 +41,21 @@ export function LawyerGrid({ showBio = false }: { showBio?: boolean }) {
               <div className="mt-auto pt-6">
                 <p className="font-body text-sm text-bone-dim">{l.focus}</p>
                 <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-bone-dim/70">{l.oab}</p>
+                <p className=" font-body text-sm leading-relaxed flex justify-end items-end text-bone-dim">
+                  <a
+                    href={l.social}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-full bg-secondary/50 flex items-end justify-end text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+                    aria-label="Instagram"
+                  >
+                    <img
+                      src="/icons/instagram.svg"
+                      alt="Instagram"
+                      className="h-8 w-8"
+                    />
+                  </a>
+                </p>
               </div>
             </div>
             <span className="absolute inset-x-0 bottom-0 h-px w-full origin-left scale-x-0 bg-gold transition-transform duration-500 group-hover:scale-x-100" />

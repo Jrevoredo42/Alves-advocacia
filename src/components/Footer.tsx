@@ -49,7 +49,29 @@ export function Footer() {
               Garanhuns - PE
             </p>
           </div>
+
+          <div>
+            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gold">Nos siga nas Redes Sociais</p>
+            <p className="mt-4 font-body text-sm leading-relaxed text-bone-dim">
+              <a
+                href="https://www.instagram.com/alvesadvocaciagus/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-secondary/50 flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+                aria-label="Instagram"
+              >
+                <img
+                  src="/icons/instagram.svg"
+                  alt="Instagram"
+                  className="h-8 w-8"
+                />
+              </a>
+            </p>
+          </div>
+
         </div>
+
+
 
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-hair pt-8 md:flex-row md:items-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-bone-dim/70">
@@ -66,4 +88,3 @@ export function Footer() {
     </footer>
   );
 }
-
