@@ -23,9 +23,8 @@ function AreaSelect({ value, onChange }: { value: string; onChange: (v: string) 
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        className={`flex w-full items-center justify-between border-b py-3 pr-1 text-left font-body outline-none transition-colors ${
-          open ? "border-gold" : "border-hair hover:border-gold-dim"
-        } ${value ? "text-bone" : "text-bone-dim/50"}`}
+        className={`flex w-full items-center justify-between border-b py-3 pr-1 text-left font-body outline-none transition-colors ${open ? "border-gold" : "border-hair hover:border-gold-dim"
+          } ${value ? "text-bone" : "text-bone-dim/50"}`}
       >
         <span>{value || "Selecione a área de direito"}</span>
         <motion.span
@@ -57,11 +56,10 @@ function AreaSelect({ value, onChange }: { value: string; onChange: (v: string) 
                       onChange(a);
                       setOpen(false);
                     }}
-                    className={`group flex w-full items-center gap-3 border-l-2 px-4 py-3 text-left font-body text-sm transition-colors ${
-                      selected
+                    className={`group flex w-full items-center gap-3 border-l-2 px-4 py-3 text-left font-body text-sm transition-colors ${selected
                         ? "border-gold bg-panel text-gold"
                         : "border-transparent text-bone-dim hover:border-gold-dim hover:bg-panel hover:text-bone"
-                    }`}
+                      }`}
                   >
                     <span className="font-mono text-[10px] tracking-[0.2em] text-gold/70">
                       {String(i + 1).padStart(2, "0")}
@@ -80,7 +78,7 @@ function AreaSelect({ value, onChange }: { value: string; onChange: (v: string) 
 }
 
 // Número do escritório (formato internacional, apenas dígitos).
-const WHATSAPP = "5511300044000";
+const WHATSAPP = "558781667416";
 
 const AREAS = [
   "Direito de Família & Divórcio",
