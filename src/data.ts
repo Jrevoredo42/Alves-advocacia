@@ -45,13 +45,23 @@ export const AREAS: Area[] = [
   },
   {
     n: "03",
-    title: "Direito Tributário",
-    desc: "Planejamento, contencioso administrativo e judicial, e recuperação de créditos com leitura precisa do risco fiscal.",
+    title: "Direito Imobiliário",
+    desc: "Consultoria em transações imobiliárias, elaboração e revisão de contratos, análise de riscos e defesa em disputas relacionadas a propriedades.",
   },
 
   {
     n: "04",
     title: "Direito do Trabalho",
     desc: "ramo jurídico que transforma o esforço humano e o sustento do trabalhador em um conjunto de garantias sociais mínimas, protegendo a sua dignidade e saúde no ambiente profissional.",
+  },
+  {
+    n: "05",
+    title: "Direito Previdenciário",
+    desc: "Assessoria completa em aposentadorias (rural, urbana, especial, por invalidez), pensões, auxílios e benefícios previdenciários, buscando garantir a segurança financeira e o bem-estar.",
+  },
+  {
+    n: "06",
+    title: "Direito Penal",
+    desc: "Defesa criminal de casos com menor potêncial ofensivo, acompanhamento em delegacias, e ações penais.",
   },
 ];
